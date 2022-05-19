@@ -1,0 +1,99 @@
+.f {
+  &s {
+    &-11 {
+      font-size: 1.1rem;
+    }
+    &-14 {
+      font-size: 1.4rem;
+    }
+    &-15 {
+      font-size: 1.5rem;
+    }
+    &-16 {
+      font-size: 1.6rem;
+    }
+    &-18 {
+      font-size: 1.8rem;
+    }
+    &-20 {
+      font-size: 2rem;
+    }
+    &-30 {
+      font-size: 3rem;
+    }
+    &-40 {
+      font-size: 4rem;
+    }
+    &-45 {
+      font-size: 4.5rem;
+    }
+  }
+  &w {
+    &-light {
+      font-weight: 300;
+    }
+    &-regular {
+      font-weight: 400;
+    }
+    &-medium {
+      font-weight: 500;
+    }
+    &-semibold {
+      font-weight: 600;
+    }
+  }
+}
+.container {
+  padding: 0 22rem;
+}
+.active {
+  color: $green;
+}
+.hero {
+  width: 100%;
+}
+%button {
+  background-color: $green;
+  color: #fff;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: all 0.4s;
+  cursor: pointer;
+  &:hover {
+    background-color: $darkGreen;
+  }
+}
+.button {
+  &Nav {
+    @extend %button;
+    width: 13.4rem;
+    height: 4.6rem;
+    border-radius: 5px;
+  }
+  &Sub {
+    @extend %button;
+    width: 33%;
+    height: 5.2rem;
+    border-radius: 0 5px 5px 0;
+  }
+}
+%input {
+  border: none;
+  height: 5.2rem;
+  width: 67%;
+  border-radius: 5px 0 0 5px;
+  padding: 1rem;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+.input {
+  @extend %input;
+
+  &:focus {
+    outline: none;
+  }
+  &::placeholder {
+    color: $spanbg;
+  }
+}

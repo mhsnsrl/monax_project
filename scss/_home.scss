@@ -1,0 +1,429 @@
+// Header and Section1
+header {
+  background-color: $headerbg;
+  position: relative;
+  nav {
+    padding-top: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      li {
+        margin-left: 4.8rem;
+        &:hover {
+          color: $green;
+          cursor: pointer;
+        }
+        &:last-child {
+          display: none;
+          &:hover {
+            color: $green;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 0 14rem 0;
+    div {
+      padding: 5rem 5rem 5rem 0;
+      width: 52%;
+      span {
+        color: $darkGray;
+        padding: 0.5rem 1.5rem;
+        background-color: $spanbg;
+        border-radius: 20px;
+      }
+      h1 {
+        color: $darkBlue;
+        padding: 2rem 0 1rem 0;
+      }
+      p {
+        color: $lightGray;
+        padding: 1rem 0 4rem 0;
+      }
+    }
+  }
+  .gridPoints {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+// Section2
+.section2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 15rem 0;
+  position: relative;
+  div {
+    text-align: center;
+    h6 {
+      color: $ligtBlue;
+      margin: 2rem 0;
+    }
+    p {
+      color: $lightGray;
+      margin: 2rem 0 0 0;
+    }
+  }
+  .rectangle {
+    position: absolute;
+    width: 3.1rem;
+    height: 4rem;
+    background-color: lighten($headerbg, 3.2%);
+    bottom: 12rem;
+    right: 0rem;
+    transform: translateX(15rem);
+  }
+}
+// Section3
+.section3 {
+  position: relative;
+  padding: 10rem 22rem 10rem 17rem !important;
+  background-color: lighten($headerbg, 3.2%) !important;
+  &Items {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    div {
+      padding: 0 0 3rem 6rem;
+      width: 50%;
+      span {
+        color: $ligterBlue;
+      }
+      h2 {
+        color: $darkBlue;
+        padding: 0 0 0.5rem 0;
+      }
+      p {
+        color: $lightGray;
+        padding: 0.5rem 0 2rem 0;
+      }
+    }
+  }
+  .gridPoints {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+// Section4
+.section4 {
+  background-color: $footer;
+  &Items {
+    padding: 8rem 0;
+    text-align: center;
+    span {
+      color: #fff;
+      margin-bottom: 3rem !important;
+    }
+    p {
+      color: $lighterGray;
+      padding: 2rem 20rem 4rem 20rem !important;
+    }
+    input {
+      width: 39% !important;
+    }
+    button {
+      width: 18%;
+    }
+  }
+}
+// Section5
+.section5 {
+  position: relative;
+  padding: 10rem 14rem 10rem 22rem !important;
+  &Items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    div {
+      padding: 0 0 3rem 0;
+      margin-right: 4rem;
+      width: 42%;
+      span {
+        color: $ligterBlue;
+      }
+      h2 {
+        color: $darkBlue;
+        padding: 0 0 0.5rem 0;
+      }
+      p {
+        color: $lightGray;
+        padding: 0.5rem 0 2rem 0;
+      }
+    }
+  }
+  .gridPoints {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+// Section6
+.section6 {
+  background-color: lighten($headerbg, 3.2%) !important;
+  padding: 0 15rem !important;
+  img {
+    display: block;
+    margin: auto;
+  }
+  &Items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7rem 0 !important;
+    .section6Item {
+      &:first-child {
+        text-align: center;
+        margin-bottom: 4rem;
+        span {
+          color: $darkBlue;
+        }
+      }
+      &:last-child {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .cards {
+          text-align: center;
+          width: 22rem;
+          height: 20rem;
+          background-color: #fff;
+          margin: 1rem;
+          transition: all 1s;
+          div {
+            height: 100%;
+            padding: 3rem 0;
+            img {
+              margin-bottom: 2rem;
+            }
+            span {
+              margin: 1rem;
+            }
+          }
+          span {
+            display: block;
+            &:nth-child(odd) {
+              color: $lightGray;
+            }
+            &:nth-child(even) {
+              color: $moreLigtBlue;
+            }
+          }
+          &:hover {
+            background-color: lighten($green, 35%);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+// Section7
+.section7 {
+  position: relative;
+  padding: 10rem 22rem 10rem 17rem !important;
+  &Items {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    div:first-child {
+      padding: 0 0 3rem 6rem;
+      width: 50%;
+      .icon {
+        display: flex;
+        align-items: center;
+        div {
+          margin-left: 2rem;
+          span {
+            color: $moreLigtBlue;
+          }
+          p {
+            color: $lightGray;
+          }
+        }
+      }
+
+      span {
+        color: $ligterBlue;
+      }
+      h2 {
+        color: $darkBlue;
+        padding: 0 0 0.5rem 0;
+      }
+      p {
+        color: $lightGray;
+        padding: 0.5rem 0 2rem 0;
+      }
+    }
+  }
+  .gridPoints {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+//Section8 same as Section4
+//
+//Section9
+.section9 {
+  position: relative;
+
+  &Item {
+    img {
+      display: block;
+      margin: auto;
+    }
+
+    &:first-child {
+      padding: 9rem 0 4.5rem 0;
+      text-align: center;
+    }
+    &:last-child {
+      padding: 0 0 9rem 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      .cards {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        width: 27rem;
+        height: 60rem;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+        margin: 1.3rem;
+        padding: 7rem;
+        transition: all 0.4s;
+        span {
+          display: block;
+          &:nth-child(1) {
+            color: $green;
+          }
+          &:nth-child(2) {
+            color: $darkBlue !important;
+          }
+          &:nth-child(3) {
+            line-height: 3;
+            color: $moreMoreLightBlue;
+          }
+        }
+        &:hover {
+          background-color: lighten($green, 40%);
+          cursor: pointer;
+          transform: scale(1.04);
+        }
+      }
+    }
+  }
+  .gridPoints {
+    &:last-child {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+    &:first-child {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+.section10 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10rem 18rem !important;
+  text-align: center;
+  background-color: lighten($headerbg, 3.2%) !important;
+  h3 {
+    color: $darkBlue;
+    margin: 4rem 0;
+  }
+  .circle {
+    width: 9.4rem;
+    height: 9.4rem;
+    border-radius: 50%;
+    background-color: $circle;
+    margin: 0 0 2rem 0;
+  }
+  span {
+    color: $ligtBlue;
+    margin: 0 0 4rem 0;
+  }
+  p {
+    color: $lightGray;
+    padding: 0 16rem;
+  }
+}
+.section11 {
+  padding: 5rem 10rem !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  div {
+    &:first-child {
+      text-align: center;
+    }
+    &:last-child {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      text-align: center;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+      article {
+        width: 32rem;
+        margin: 1rem;
+        margin-top: 2rem;
+        div {
+          width: 100%;
+          height: 20rem;
+          background-color: $rectangle;
+          margin-bottom: 4rem;
+        }
+        h5 {
+          color: $ligtBlue;
+        }
+        p {
+          color: lightgrey;
+          margin: 2rem 0 !important;
+        }
+        span {
+          color: $green !important;
+          &:hover {
+            color: $darkGray !important;
+          }
+        }
+      }
+    }
+  }
+}
+//Footer
+footer {
+  padding: 0 17.5rem !important;
+  display: flex;
+  align-items: center;
+  background-color: $footer;
+  height: 7rem;
+  p {
+    color: $copyRight;
+  }
+}
